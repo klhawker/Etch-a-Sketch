@@ -27,7 +27,7 @@ function reset() {
 function generateGrid(number) {
     for (let i = 0; i < number; i++) {
         const grid_div = document.createElement("div");
-        grid_div.setAttribute('class', 'grid');
+        grid_div.setAttribute('class', 'grid grid-lines');
         document.getElementsByClassName("container")[0].appendChild(grid_div);
     }
     return;
@@ -54,3 +54,8 @@ function changeGridSize() {
     }
 }
 
+function gridLines() {
+    document.querySelectorAll(".grid").forEach((item) => {
+        item.classList.toggle('grid-lines');
+    });
+}
