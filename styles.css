@@ -13,13 +13,13 @@ body {
     height: 80vmin;
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid black;
 }
 
 .grid {
     width: 25%;
     height: 25%;
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
 .reset{
